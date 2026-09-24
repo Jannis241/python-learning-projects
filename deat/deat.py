@@ -124,3 +124,4 @@ class NeuralNetwork:
 
 def calculateAccuracy(output, expectedOutput):
     accuracy = round(100 - abs(expectedOutput - output) * 100, 3)
+    return accuracy

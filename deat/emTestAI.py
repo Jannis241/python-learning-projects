@@ -20,6 +20,8 @@ def normalize_list(numbers: list):
 
 nn = deat.NeuralNetwork(2, [5], 1)
 
+input = [5, 5]
+
 for generation in range(500):
     expectedOutput = input[0] + input[1]
 
@@ -28,7 +30,6 @@ for generation in range(500):
         print(f"generation: {generation}, loss: {round(nn.averageLoss, 3)}")
 
 
-input = [5, 5]
 expectedOutput = [10]
 output = nn.calcOutput(input)
 loss = nn.evaluateLoss(output, expectedOutput)
