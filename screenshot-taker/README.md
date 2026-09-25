@@ -2,14 +2,6 @@
 
 A small script that automatically takes screenshots of the screen and saves them.
 
-## Why I built it
-
-**[TODO: why did you build it? e.g. "I wanted to try out automating things on my computer with Python"]**
-
-## What I learned
-
-**[TODO: e.g. "how to use an external library like pyautogui"]**
-
 ## Run
 
 Needs `pyautogui` (`pip install pyautogui`).
