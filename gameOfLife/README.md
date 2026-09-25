@@ -18,8 +18,3 @@ python main.py
 ```
 
 Press `q` to quit.
-
-## Note
-
-The screen is cleared with `os.system("cls")`, which is a Windows command. On Linux/macOS nothing happens, so the screen is not cleared and the output just keeps scrolling down. It doesn't crash, it just doesn't look as nice.
-

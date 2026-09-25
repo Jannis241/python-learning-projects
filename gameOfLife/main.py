@@ -73,7 +73,7 @@ class Game:
                 symbol = dead
 
             self.coordAliveDict[(cell.x, cell.y)] = symbol
-        os.system("cls")
+        os.system("cls" if os.name == "nt" else "clear")
         for y in range(self.height):
             row = ""
             for x in range(self.width):
