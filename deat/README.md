@@ -1,11 +1,26 @@
 # Deat
 
-neuronales Netz komplett selbst geschrieben, ohne fertige ML lib (nur numpy für die Rechnungen). Es gibt Neuronen, Layer und ein Network das per Backpropagation trainiert wird. Als Test hab ich versucht damit Zahlen zu sortieren bzw addieren.
+A neural network written completely by myself, without a ready-made ML library (only numpy for the math). There are neurons, layers and a network that is trained with backpropagation. To test it, I tried to teach it to sort and to add numbers.
 
-Ich hab das gemacht weil ich wissen wollte wie neuronale Netze  wirklich funktionieren, statt nur mit bereits bestehenden libaries zu arbeiten.
+## Why I built it
 
-gelernt dabei: was Weights, Bias und Sigmoid machen, wie Backpropagation und Gradient Descent funktionieren
+I wanted to understand how neural networks really work, instead of only using existing libraries.
 
-**kleiner Hinweis:** `emTestAI.py` soll eigentlich 5+5 lernen, klappt aber nicht richtig weil der Output vom Netz durch Sigmoid immer zwischen 0 und 1 liegt und daher nie auf 10 kommen kann - loss bleibt konstant hoch. Ist halt vom Aufbau her nicht für sowas gemacht, `sortNumbersAI.py` (Werte zwischen 0 und 1 sortieren) passt da besser zum Sigmoid-Output und funktioniert gut.
+## What I learned
 
-braucht numpy (`pip install numpy`)
+- What weights, biases and the sigmoid function do
+- How backpropagation and gradient descent work
+
+## Run
+
+Needs numpy (`pip install numpy`).
+
+```sh
+python sortNumbersAI.py
+python emTestAI.py
+```
+
+## Note
+
+`emTestAI.py` is supposed to learn 5 + 5, but it doesn't really work. Because of the sigmoid function, the output of the network is always between 0 and 1, so it can never reach 10 and the loss stays high. The network is just not built for this. `sortNumbersAI.py` (sorting values between 0 and 1) fits the sigmoid output much better and works well.
+

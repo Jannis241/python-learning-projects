@@ -1,9 +1,25 @@
 # GameOfLife
 
-Conways Game of Life in der Konsole. Zellen leben oder sterben nach ein paar einfachen Regeln (zu wenig oder zu viele Nachbarn = sterben, genau 3 Nachbarn = neues Leben), Schritt für Schritt wird das Feld neu gezeichnet.
+Conway's Game of Life in the console. Cells live or die based on a few simple rules (too few or too many neighbours = the cell dies, exactly 3 neighbours = a new cell is born). Step by step, the field is drawn again.
 
-Ich habe das ganze gebaut, weil Game of Life ein bekanntes Beispiel ist und ich es einfach mal selbst nachbauen wollte.
+## Why I built it
 
-gelernt habe ich dabei: wie man mit Nachbar-Koordinaten in einem 2D Feld rechnet, und wie man mit ein paar simplen Regeln trotzdem ziemlich komplexes Verhalten hinbekommt.
+Game of Life is a well-known example, and I wanted to build it myself.
 
-**kleiner Hinweis:** das Clearen vom Screen (`os.system("cls")`) ist ein Windows Befehl, unter Linux/Mac passiert da einfach nix, der Screen wird also nicht geleert und die Ausgabe scrollt sich immer weiter runter. Kein Crash, sieht nur nicht so schön aus. Mit "q" beenden geht trotzdem überall.
+## What I learned
+
+- How to work with neighbour coordinates in a 2D grid
+- How a few simple rules can still create quite complex behaviour
+
+## Run
+
+```sh
+python main.py
+```
+
+Press `q` to quit.
+
+## Note
+
+The screen is cleared with `os.system("cls")`, which is a Windows command. On Linux/macOS nothing happens, so the screen is not cleared and the output just keeps scrolling down. It doesn't crash, it just doesn't look as nice.
+

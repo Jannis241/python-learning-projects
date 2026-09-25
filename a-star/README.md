@@ -1,9 +1,22 @@
 # A-Star
 
-kleiner Pathfinding Algorithmus (A*) der in der Konsole ein Gitter zeichnet und den kürzesten Weg von Start zu Ziel zwischen random platzierten Blöcken sucht.
+A small A* pathfinding program. It draws a grid in the console and finds the shortest path from start to goal between randomly placed blocks.
 
-Ich hab dieses Projekt gemacht weil ich A* mal aus Interesse selbst bauen wollte, nachdem ich davon gehört hab.
+## Why I built it
 
-Gelernt habe ich dabei: wie A* mit g-cost, h-cost und f-cost eigentlich funktioniert, wie man mit eigenen Klassen arbeitet (Node) und wie man sowas wie ein Grid einfach mit einem Dictionary macht.
+I heard about A* and wanted to build it myself, just out of interest.
 
-läuft einfach mit `python main.py`, keine extra packages notwendig
+## What I learned
+
+- How A* works with g-cost, h-cost and f-cost
+- How to work with my own classes (`Node`)
+- How to build a grid in a simple way with a dictionary
+
+## Run
+
+```sh
+python main.py
+```
+
+No extra packages needed.
+
